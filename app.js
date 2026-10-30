@@ -1,6 +1,7 @@
 const scriptUrl = "https://script.google.com/macros/s/AKfycbxNWWiLGFO11A1YUV28U1K1pa7OZl90y11RFP0PdugnEOcaWU-_YTPYpOhp23UqrJwoeQ/exec";
 const form = document.querySelector("#registration-form");
 const statusMessage = document.querySelector("#form-status");
+const successDialog = document.querySelector("#success-dialog");
 const submitButton = form.querySelector("button[type='submit']");
 const submissionFrame = document.querySelector(".submission-frame");
 const submissionFrameName = "submission-frame";
@@ -34,7 +35,8 @@ window.addEventListener("message", (event) => {
   if (event.data.ok) {
     form.reset();
     form.elements.namedItem("參加人數").value = "1";
-    showStatus("報名資料已送出，期待在沖繩見到你！");
+    showStatus("");
+    successDialog.showModal();
   } else {
     showStatus("送出未完成，請稍後再試或聯絡活動窗口。", "error");
   }

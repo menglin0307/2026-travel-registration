@@ -31,13 +31,36 @@
             <p class="eyebrow">THREE DAYS, ONE ISLAND</p>
             <h2 id="itinerary-title">旅程小日記</h2>
           </div>
-          <div class="date-stamp"><span class="calendar-icon" aria-hidden="true">01</span><span>2027 年 1 月 1 日<br /><strong>沖繩，出發！</strong></span></div>
-          <ol class="schedule">
-            <li><time>09:00</time><span>台中機場集合出發</span></li>
-            <li><time>11:00</time><span>抵達沖繩</span></li>
-            <li><time>12:00</time><span>午餐時間</span></li>
-            <li><time>14:00</time><span>商場逛街</span></li>
-          </ol>
+          <div class="trip-days">
+            <section class="day-plan" aria-labelledby="day-one-title">
+              <div class="day-heading"><span class="calendar-icon" aria-hidden="true">01</span><h3 id="day-one-title">2027.1.1</h3></div>
+              <ol class="schedule">
+                <li><time>09:00</time><span>台中機場集合出發</span></li>
+                <li><time>11:00</time><span>抵達沖繩</span></li>
+                <li><time>12:00</time><span>午餐時間</span></li>
+                <li><time>14:00</time><span>商場逛街</span></li>
+                <li><time>17:00</time><span>飯店 check in 後晚餐自理</span></li>
+              </ol>
+            </section>
+            <section class="day-plan" aria-labelledby="day-two-title">
+              <div class="day-heading"><span class="calendar-icon" aria-hidden="true">02</span><h3 id="day-two-title">2027.1.2</h3></div>
+              <ol class="schedule">
+                <li><time>09:00</time><span>飯店大廳集合出發</span></li>
+                <li><time>10:00</time><span>海游館半日遊</span></li>
+                <li><time>13:00</time><span>海游館門口集合出發至 outlet</span></li>
+                <li><time>14:00</time><span>逛街囉~血拚囉~自行決定回飯店時間</span></li>
+              </ol>
+            </section>
+            <section class="day-plan" aria-labelledby="day-three-title">
+              <div class="day-heading"><span class="calendar-icon" aria-hidden="true">03</span><h3 id="day-three-title">2027.1.3</h3></div>
+              <ol class="schedule">
+                <li><time>早上</time><span>自由活動</span></li>
+                <li><time>15:00</time><span>飯店大廳集合出發前往機場</span></li>
+                <li><time>17:00</time><span>起飛</span></li>
+                <li><time>19:00</time><span>回到溫暖的台中</span></li>
+              </ol>
+            </section>
+          </div>
           <p class="itinerary-note">海風、好吃的，還有一起出遊的你。</p>
         </article>
 
@@ -75,6 +98,11 @@
       </section>
       <footer class="page-footer"><span>SEE YOU IN OKINAWA</span><span>2027 員工旅遊</span></footer>
     </main>
+    <dialog class="success-dialog" id="success-dialog" aria-labelledby="success-title">
+      <span class="dialog-mark" aria-hidden="true">✓</span>
+      <h2 id="success-title">報名資料已送出~</h2>
+      <form method="dialog"><button class="dialog-confirm" type="submit">確定</button></form>
+    </dialog>
     <iframe class="submission-frame" name="submission-frame" title="報名送出結果" aria-hidden="true"></iframe>
   </body>
 </html>
