@@ -2,6 +2,8 @@
 
 沖繩員工旅遊活動頁面，使用 GitHub Pages 發布，報名資料由 Google Apps Script 寫入 Google 試算表 `2026_旅遊報名表`。
 
+維護文件請從 [系統文件索引](docs/README.md) 開始。
+
 ## Google Apps Script
 
 Apps Script 網頁應用程式已部署，表單端點已設定在 `app.js`。應用程式以擁有者身分執行，並允許所有人提交報名；試算表仍留在擁有者的 Google 雲端硬碟，不應公開分享。
