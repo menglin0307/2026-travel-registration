@@ -12,6 +12,6 @@ Apps Script 網頁應用程式已部署，表單端點已設定在 `app.js`。�
 
 ## GitHub Pages
 
-部署後網址：待 GitHub Pages 啟用後填入
+網站網址：https://menglin0307.github.io/2026-travel-registration/
 
 此儲存庫不包含 `spec/` 規格資料夾。
