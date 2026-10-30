@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#d8f3ec" />
+    <meta name="description" content="2027 員工旅遊沖繩行程與報名表單。" />
+    <title>2027 員工旅遊｜一起去沖繩</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="title-row">
+        <p class="eyebrow"><span class="sun-mark" aria-hidden="true">✳</span> COMPANY TRIP · OKINAWA</p>
+        <h1>2027 <span>員工旅遊</span></h1>
+        <p class="title-note">把日常先放一邊，海島假期集合囉！</p>
+      </header>
+
+      <section class="image-row" aria-label="沖繩員工旅遊活動圖片">
+        <img class="cover-image" src="cover.jpg" alt="沖繩員工旅遊插畫，包含海灘、首里城與旅遊巴士" />
+        <div class="image-caption"><span>OKINAWA</span><span>2027.01.01 — 01.03</span></div>
+      </section>
+
+      <section class="details-row" aria-label="活動內容與報名表單">
+        <article class="itinerary" aria-labelledby="itinerary-title">
+          <div class="section-heading">
+            <p class="eyebrow">THREE DAYS, ONE ISLAND</p>
+            <h2 id="itinerary-title">旅程小日記</h2>
+          </div>
+          <div class="date-stamp"><span class="calendar-icon" aria-hidden="true">01</span><span>2027 年 1 月 1 日<br /><strong>沖繩，出發！</strong></span></div>
+          <ol class="schedule">
+            <li><time>09:00</time><span>台中機場集合出發</span></li>
+            <li><time>11:00</time><span>抵達沖繩</span></li>
+            <li><time>12:00</time><span>午餐時間</span></li>
+            <li><time>14:00</time><span>商場逛街</span></li>
+          </ol>
+          <p class="itinerary-note">海風、好吃的，還有一起出遊的你。</p>
+        </article>
+
+        <section class="registration" aria-labelledby="registration-title">
+          <div class="section-heading form-heading">
+            <p class="eyebrow">SAVE YOUR SEAT</p>
+            <h2 id="registration-title">我要報名 <span aria-hidden="true">↗</span></h2>
+            <p>填好資料，一起出發去玩！</p>
+          </div>
+          <form id="registration-form" novalidate>
+            <div class="form-grid">
+              <label class="field field-wide">姓名 <span class="required">*</span>
+                <input name="姓名" autocomplete="name" placeholder="怎麼稱呼你？" required maxlength="80" />
+              </label>
+              <label class="field field-wide">Email <span class="required">*</span>
+                <input name="email" type="email" autocomplete="email" placeholder="name@example.com" required maxlength="120" />
+              </label>
+              <label class="field">單位
+                <input name="單位" autocomplete="organization" placeholder="例如：企劃部" maxlength="100" />
+              </label>
+              <label class="field">職稱
+                <input name="職稱" placeholder="例如：專員" maxlength="100" />
+              </label>
+              <label class="field">電話 <span class="required">*</span>
+                <input name="電話" type="tel" autocomplete="tel" inputmode="tel" placeholder="請輸入聯絡電話" required maxlength="30" />
+              </label>
+              <label class="field">參加人數
+                <input name="參加人數" type="number" min="1" max="99" value="1" required />
+              </label>
+            </div>
+            <button class="submit-button" type="submit"><span>送出報名</span><span class="button-arrow" aria-hidden="true">→</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </section>
+      <footer class="page-footer"><span>SEE YOU IN OKINAWA</span><span>2027 員工旅遊</span></footer>
+    </main>
+    <iframe class="submission-frame" name="submission-frame" title="報名送出結果" aria-hidden="true"></iframe>
+  </body>
+</html>
